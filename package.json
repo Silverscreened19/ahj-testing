@@ -9,6 +9,7 @@
     "build": "webpack --mode production",
     "lint": "eslint .",
     "test": "jest --testPathPattern=./src/",
+    "test:ci": "start-server-and-test start :9000 jest",
     "coverage": "jest --testPathPattern=./e2e/ --coverage",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "doc": "jsdoc -c jsdoc.conf.json",
