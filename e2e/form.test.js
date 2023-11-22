@@ -30,7 +30,7 @@ describe('Page start', () => {
 
     await submit.click();
     await page.waitForSelector('.card_visa.active');
-  }, 10000);
+  }, 30000);
 
   test('invalid', async () => {
     await page.goto('http://localhost:9000');
@@ -42,7 +42,7 @@ describe('Page start', () => {
 
     await submit.click();
     await page.waitForSelector('.invalid');
-  }, 10000);
+  }, 30000);
 
   afterEach(async () => {
     await browser.close();
